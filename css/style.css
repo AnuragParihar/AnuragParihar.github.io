@@ -86,3 +86,10 @@ input{
 	font-size:20px;
 	font-weight: 500;
 }
+
+/*CSS for Mobile Views*/
+@media only screen and (max-width: 786px) {
+.tabContent{
+	overflow-y: scroll;
+}
+}
