@@ -1,0 +1,99 @@
+<header>
+
+</header><!-- /header -->
+
+<div class="banner">
+	<form>
+		<div class="container group">
+			<h1>Search the Artist</h1>
+			<div class="mainSearchBar row">
+
+				<button class="btn btn-search" ng-click="search();" data-toggle="modal" data-target="#searchModal">
+					Search
+				</button>
+
+				<!-- Tabs -->
+				<div class="tabs" ng-show="showTabs">
+					<uib-tabset active="activeJustified" justified="true">
+						<uib-tab index="0" heading="Jack" ng-click="callJack(1);">
+							{{artistNameFetched}}
+							<br>
+							{{trackNameFetched}}
+							<br>
+							{{artworkFetched}}
+						</uib-tab>
+						<uib-tab index="1" heading="Jack" ng-click="callJack(2);">
+							{{artistNameFetched}}
+							<br>
+							{{trackNameFetched}}
+							<br>
+							{{artworkFetched}}
+						</uib-tab>
+						<uib-tab index="2" heading="Jack" ng-click="callJack(3);">
+							{{artistNameFetched}}
+							<br>
+							{{trackNameFetched}}
+							<br>
+							{{artworkFetched}}
+						</uib-tab>
+						<uib-tab index="3" heading="Jack" ng-click="callJack(4);">
+							{{artistNameFetched}}
+							<br>
+							{{trackNameFetched}}
+							<br>
+							{{artworkFetched}}
+						</uib-tab>
+					</uib-tabset>
+				</div>
+
+			</div>
+
+		</div>
+	</form>
+
+</div>
+<!-- Banner -->
+
+<!-- Modal -->
+<div class="modal fade" id="searchModal" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">
+					&times;
+				</button>
+				<h4 class="modal-title">Search the Artist</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row">
+					<div class="col-sm-3">
+						Name
+					</div>
+					<div class="col-sm-9">
+						<input type="text" ng-model="artistName"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-3">
+						No. of tracks
+					</div>
+					<div class="col-sm-9">
+						<input type="number" ng-model="limit"/>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-primary" ng-click="searchArtist();">
+					Search
+				</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">
+					Close
+				</button>
+
+			</div>
+		</div>
+
+	</div>
+</div>
