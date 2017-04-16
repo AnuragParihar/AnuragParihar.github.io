@@ -1,1 +1,1 @@
-var host="http://itunes.apple.com/";
+var host="https://itunes.apple.com/";
